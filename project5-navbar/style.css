@@ -1,0 +1,103 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Sticky Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #222;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* Brand Sections Layout */
+.brand-section {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  gap: 30px;
+}
+
+.brand-section img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.brand-info {
+  flex: 1;
+}
+
+.brand-info h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.brand-info p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .brand-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-section img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .brand-info {
+    padding-top: 15px;
+  }
+}
+footer{
+    text-align: center;
+    background-color: azure;
+}
